@@ -50,7 +50,7 @@ async function sendAudioToOpenAI(audioBlob) {
       formData.append('threadId', threadId);
     }
 
-    const response = await fetch('http://localhost:3000/transcribe-and-respond', {
+    const response = await fetch('https://port-0-e-back-lxlts66g89582f3b.sel5.cloudtype.app/transcribe-and-respond', {
       method: 'POST',
       body: formData,
     });
